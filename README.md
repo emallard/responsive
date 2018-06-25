@@ -27,11 +27,11 @@ En utilisant la fonctionnalité flex, on peut dire à A et B de s'afficher cote 
 }
         
 .a {
-    width: 40%;
+    width: 50%;
 }
 
 .b {
-    width: 40%;
+    width: 50%;
 }
 ```
 
@@ -49,11 +49,11 @@ Mais au bout d'un moment, en réduisant la taille d'écran vers un smartphone, o
 }
         
 .a {
-    width: 100%;
+    width: 90%;
 }
 
 .b {
-    width: 100%;
+    width: 90%;
 }
 ```
 
@@ -68,11 +68,11 @@ Ce qui s'écrit en se disant que la largeur d'un smartphone c'est 500px :
     }
     
     .a {
-        width: 40%;
+        width: 50%;
     }
     
     .b {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -84,11 +84,11 @@ Ce qui s'écrit en se disant que la largeur d'un smartphone c'est 500px :
     }
     
     .a {
-        width: 80%;
+        width: 90%;
     }
     
     .b {
-        width: 80%;
+        width: 90%;
     }
 }
 ```
@@ -124,7 +124,7 @@ C'est le cas classique d'un menu qui a la place d'être affiché en desktop et p
 /* Smartphone */
 @media screen and (max-width: 500px) {
     .a {
-        width: 90%;
+        width: 100%;
     }
     
     .b {
