@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+
+    <div class="conteneur">
+        <div class="a">
+            A
+        </div>
+
+        <div class="b">
+            B
+        </div>
+    </div>
+
+
+    <style>
+        div {
+            margin:20px;
+            padding:20px;
+            border : solid 1px black;
+            box-sizing: content-box;
+        }
+
+        /* Partie commune */
+        .conteneur {
+                display:flex;
+                flex-direction : row;
+            }
+
+
+        /* Desktop */
+        @media screen and (min-width: 500px) {
+            
+            
+            .a {
+                width: 70%;
+            }
+            
+            .b {
+                width: 20%;
+            }
+        }
+
+        /* Smartphone */
+        @media screen and (max-width: 500px) {
+            .a {
+                width: 100%;
+            }
+            
+            .b {
+                display:none
+            }
+        }
+    </style>
+
+  </body>
+</html>

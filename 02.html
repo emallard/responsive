@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+
+    <div class="conteneur">
+        <div class="a">
+            A
+        </div>
+
+        <div class="b">
+            B
+        </div>
+    </div>
+
+
+    <style>
+        div {
+            margin:10px;
+            padding:10px;
+            border : solid 1px black;
+            box-sizing: border-box;
+        }
+
+        /* Desktop */
+        @media screen and (min-width: 500px) {
+            .conteneur {
+                display:flex;
+                flex-direction : row;
+            }
+            
+            .a {
+                width: 50%;
+            }
+            
+            .b {
+                width: 50%;
+            }
+        }
+
+        /* Smartphone */
+        @media screen and (max-width: 500px) {
+            .conteneur {
+                display:flex;
+                flex-direction : column;
+            }
+            
+            .a {
+                width: 90%;
+            }
+            
+            .b {
+                width: 90%;
+            }
+        }
+    </style>
+
+  </body>
+</html>
